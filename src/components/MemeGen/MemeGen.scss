@@ -1,0 +1,69 @@
+#canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.googleFontFix {
+  font-family: 'Pacifico', cursive;
+
+  position: absolute;
+
+  visibility: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.custom-range {
+  padding: 0 0.75rem !important;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.popover {
+  position: absolute;
+  z-index: 10;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app {
+  &__control {
+    margin-top: 1.5rem;
+  }
+
+  &__canvas {
+    display: flex;
+
+    margin-top: 1rem;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__save {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__results {
+    margin-top: 2.5rem;
+  }
+}

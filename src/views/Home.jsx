@@ -1,9 +1,10 @@
 import React from "react";
+import MemeGen from "../components/MemeGen/MemeGen";
 
 const Home = () => {
   return (
-    <div>
-      <p>TEST</p>
+    <div className="home">
+      <MemeGen />
     </div>
   );
 };

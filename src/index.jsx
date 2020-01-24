@@ -6,7 +6,6 @@ import App from "./components/App/App";
 import * as serviceWorker from "./serviceWorker";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-slider/dist/css/bootstrap-slider.css";
 
 import "./index.scss";
 
