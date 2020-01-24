@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  list-style-type: none;
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
