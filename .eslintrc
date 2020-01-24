@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb", "plugin:jest/recommended", "plugin:prettier/recommended", "prettier/react"],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "jquery": true
+  },
+  "plugins": [
+    // "react-hooks"
+  ],
+  "rules": {
+    // "react-hooks/rules-of-hooks": "error",
+    // "react-hooks/exhaustive-deps": "warn"
+  }
+}

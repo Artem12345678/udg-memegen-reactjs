@@ -1,0 +1,15 @@
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Dependency directories
+node_modules
+
+# Build directory
+build
+
+# serviceWorker.js 
+serviceWorker.js
+
+# gif.js
+gif.js
+gif.worker.js
