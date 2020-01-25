@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFooter.jsx matches snapshot 1`] = `
+<footer
+  className="footer bg-secondary"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="footer__nav"
+    >
+      <Nav
+        fill={false}
+        justify={false}
+      >
+        <NavLink
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "Link",
+              "propTypes": Object {
+                "innerRef": [Function],
+                "onClick": [Function],
+                "replace": [Function],
+                "target": [Function],
+                "to": [Function],
+              },
+              "render": [Function],
+            }
+          }
+          className="nav-link--footer"
+          disabled={false}
+          to="/"
+        >
+          Home
+        </NavLink>
+      </Nav>
+      <div
+        className="footer__social"
+      >
+        <SocialList />
+      </div>
+    </div>
+  </div>
+</footer>
+`;

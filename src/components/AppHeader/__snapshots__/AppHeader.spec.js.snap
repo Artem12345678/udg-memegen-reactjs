@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader.jsx matches snapshot 1`] = `
+<header
+  className="header bg-primary"
+>
+  <div
+    className="container"
+  >
+    <Navbar
+      collapseOnSelect={false}
+      expand="lg"
+      variant="dark"
+    >
+      <NavbarBrand
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Link",
+            "propTypes": Object {
+              "innerRef": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        className="brand"
+        to="/"
+      >
+        MemeGen
+      </NavbarBrand>
+      <NavbarToggle
+        aria-controls="nav-collapse"
+        label="Toggle navigation"
+      />
+      <NavbarCollapse
+        id="nav-collapse"
+      >
+        <Nav
+          className="ml-auto"
+          fill={false}
+          justify={false}
+        >
+          <NavLink
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "displayName": "Link",
+                "propTypes": Object {
+                  "innerRef": [Function],
+                  "onClick": [Function],
+                  "replace": [Function],
+                  "target": [Function],
+                  "to": [Function],
+                },
+                "render": [Function],
+              }
+            }
+            disabled={false}
+            to="/"
+          >
+            Home
+          </NavLink>
+        </Nav>
+      </NavbarCollapse>
+    </Navbar>
+  </div>
+</header>
+`;

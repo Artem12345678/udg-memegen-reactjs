@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemeGen.jsx matches snapshot 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="googleFontFix"
+  >
+    Fix
+  </div>
+  <div
+    className="app__toolbar"
+  >
+    <div
+      className="form-row"
+    >
+      <InputGroup
+        className="col-lg-4 app__control"
+      >
+        <InputGroupPrepend>
+          <InputGroupText>
+            File
+          </InputGroupText>
+        </InputGroupPrepend>
+        <div
+          className="custom-file"
+        >
+          <input
+            accept="image/jpeg,image/png,image/gif"
+            className="custom-file-input"
+            id="image"
+            name="file"
+            onChange={[MockFunction]}
+            type="file"
+          />
+          <label
+            className="custom-file-label"
+            htmlFor="image"
+          >
+            Select
+          </label>
+        </div>
+      </InputGroup>
+      <InputGroup
+        className="col-lg-4 app__control"
+      >
+        <InputGroupPrepend>
+          <InputGroupText
+            id="topText"
+          >
+            Top Text
+          </InputGroupText>
+        </InputGroupPrepend>
+        <FormControl
+          aria-describedby="topText"
+          aria-label="Top Text"
+          name="topText"
+          onChange={[Function]}
+          placeholder="Type text..."
+          value="Start Of Debug"
+        />
+      </InputGroup>
+      <InputGroup
+        className="col-lg-4 app__control"
+      >
+        <InputGroupPrepend>
+          <InputGroupText
+            id="bottomText"
+          >
+            Bottom Text
+          </InputGroupText>
+        </InputGroupPrepend>
+        <FormControl
+          aria-describedby="bottomText"
+          aria-label="Bottom Text"
+          name="bottomText"
+          onChange={[Function]}
+          placeholder="Type text..."
+          value="End Of Debug"
+        />
+      </InputGroup>
+    </div>
+    <div
+      className="form-row"
+    >
+      <InputGroup
+        className="col-lg-4 app__control"
+      >
+        <InputGroupPrepend>
+          <InputGroupText
+            id="font"
+          >
+            Font
+          </InputGroupText>
+        </InputGroupPrepend>
+        <FormControl
+          aria-describedby="font"
+          aria-label="Font Family"
+          as="select"
+          className="custom-select"
+          name="fontFamily"
+          onChange={[Function]}
+          value="Arial"
+        >
+          <option
+            disabled="disabled"
+          >
+            Choose
+          </option>
+          <option
+            value="Arial"
+          >
+            Arial
+          </option>
+          <option
+            value="Comic Sans MS"
+          >
+            Comic Sans MS
+          </option>
+          <option
+            value="Pacifico"
+          >
+            Pacifico
+          </option>
+        </FormControl>
+      </InputGroup>
+      <InputGroup
+        className="col-lg-4 app__control"
+      >
+        <InputGroupPrepend>
+          <InputGroupText
+            id="color"
+          >
+            Color
+          </InputGroupText>
+        </InputGroupPrepend>
+        <FormControl
+          aria-describedby="color"
+          aria-label="Font Color"
+          name="fontColor"
+          onClick={[Function]}
+          readOnly={true}
+          value="rgb(255, 0, 255)"
+        />
+      </InputGroup>
+      <InputGroup
+        className="col-lg-4 app__control"
+      >
+        <InputGroupPrepend>
+          <InputGroupText
+            id="size"
+          >
+            Font Size
+          </InputGroupText>
+        </InputGroupPrepend>
+        <input
+          aria-describedby="size"
+          aria-label="Font Size"
+          className="custom-range"
+          max="50"
+          min="15"
+          name="fontSize"
+          onChange={[Function]}
+          style={
+            Object {
+              "flexGrow": 1,
+              "width": "auto",
+            }
+          }
+          type="range"
+          value="25"
+        />
+      </InputGroup>
+    </div>
+  </div>
+  <div
+    className="app__canvas"
+  >
+    <canvas
+      id="canvas"
+    />
+  </div>
+  <div
+    className="app__save"
+  >
+    <InputGroup
+      className="col-lg-6 app__control"
+    >
+      <FormControl
+        aria-label="Mime Type"
+        as="select"
+        className="custom-select"
+        name="mimeType"
+        onChange={[Function]}
+        value="image/jpeg"
+      >
+        <option
+          disabled="disabled"
+        >
+          Choose
+        </option>
+        <option
+          value="image/jpeg"
+        >
+          JPG
+        </option>
+        <option
+          value="image/png"
+        >
+          PNG
+        </option>
+        <option
+          value="image/gif"
+        >
+          GIF
+        </option>
+      </FormControl>
+      <InputGroupAppend>
+        <Button
+          active={false}
+          disabled={false}
+          name="save"
+          onClick={[MockFunction]}
+          type="button"
+          variant="info"
+        >
+          Save As
+        </Button>
+      </InputGroupAppend>
+    </InputGroup>
+  </div>
+  <div
+    className="app__results"
+  >
+    <div
+      className="row"
+    />
+  </div>
+</div>
+`;

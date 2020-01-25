@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialList.jsx matches snapshot 1`] = `
+<ul
+  className="social"
+>
+  <li
+    className="social__item"
+    key="github"
+  >
+    <SocialListItem
+      icon="github"
+      url="https://www.github.com/Artem12345678"
+    />
+  </li>
+  <li
+    className="social__item"
+    key="instagram"
+  >
+    <SocialListItem
+      icon="instagram"
+      url="https://www.instagram.com/ystimenkoartem"
+    />
+  </li>
+</ul>
+`;

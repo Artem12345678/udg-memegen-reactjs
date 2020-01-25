@@ -205,6 +205,7 @@ export default class MemeGen extends Component {
               <div className="custom-file">
                 <input
                   id="image"
+                  name="file"
                   type="file"
                   accept="image/jpeg,image/png,image/gif"
                   onChange={this.onFileChangeHandler}
@@ -336,7 +337,7 @@ export default class MemeGen extends Component {
               <option value="image/gif">GIF</option>
             </FormControl>
             <InputGroup.Append>
-              <Button onClick={this.onSaveHandler} variant="info">
+              <Button name="save" onClick={this.onSaveHandler} variant="info">
                 Save As
               </Button>
             </InputGroup.Append>

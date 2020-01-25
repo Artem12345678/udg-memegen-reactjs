@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialListItem.jsx matches snapshot 1`] = `
+<a
+  className="social__link"
+  href="https://www.github.com/Artem12345678"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <img
+    alt="socialIcon"
+    src="github.svg"
+  />
+</a>
+`;
