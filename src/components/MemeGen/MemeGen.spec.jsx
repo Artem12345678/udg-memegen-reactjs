@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import ChromePicker from "react-color";
 
 import MemeGen from "./MemeGen";
@@ -32,7 +32,6 @@ describe("MemeGen.jsx", () => {
 
   const onFileChangeHandler = jest.fn();
   const onSaveHandler = jest.fn();
-  const onDeleteHandler = jest.fn();
   const renderImage = jest.fn();
 
   beforeEach(() => {
@@ -41,7 +40,6 @@ describe("MemeGen.jsx", () => {
     const instance = wrapper.instance();
     instance.onFileChangeHandler = onFileChangeHandler;
     instance.onSaveHandler = onSaveHandler;
-    instance.onDeleteHandler = onDeleteHandler;
     instance.renderImage = renderImage;
 
     wrapper.setState(data);
@@ -49,6 +47,25 @@ describe("MemeGen.jsx", () => {
 
   it("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe("computed properties", () => {
+    beforeEach(() => {
+      wrapper = mount(<MemeGen />);
+    });
+
+    it("returnes canvas element from canvasElement computed property", () => {
+      expect(wrapper.instance().canvasElement).toBe(
+        wrapper.instance().canvas.current
+      );
+    });
+
+    it("returnes 2d context of canvas element from canvasContext computed property", () => {
+      // eslint-disable-next-line no-underscore-dangle
+      expect(wrapper.instance().canvasContext._canvas).toBe(
+        wrapper.instance().canvas.current
+      );
+    });
   });
 
   describe("File input element", () => {
@@ -222,7 +239,7 @@ describe("MemeGen.jsx", () => {
       expect(wrapper.find(ChromePicker).exists()).toBe(false);
     });
 
-    it("shows colorpicker itself on click", () => {
+    it("shows up on click", () => {
       wrapper.find('[name="fontColor"]').simulate("click");
 
       expect(wrapper.find(ChromePicker).exists()).toBe(true);
@@ -314,12 +331,14 @@ describe("MemeGen.jsx", () => {
         ).toBe(true);
       });
 
-      it("triggers onDeleteHandler() method", () => {
+      it("deletes corresponding element on click", () => {
         wrapper
           .find(".app__results .row .col-md-4 .btn-danger")
-          .simulate("click");
+          .simulate("click", 1);
 
-        expect(wrapper.instance().onSaveHandler).toBeCalled();
+        expect(
+          wrapper.find(".app__results .row .col-md-4 .btn-danger").length
+        ).toBe(wrapper.state("results").length);
       });
     });
   });

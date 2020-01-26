@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Code Challange 2 - Meme Generator
 
-## Available Scripts
+Create and share fun memes! Create a meme generator to add well-known meme templates with your own text or create your own individual memes!
 
-In the project directory, you can run:
+## 1. Objective
 
-### `npm start`
+The goal is to implement an application to create memes. The task is divided into the following sub-tasks / functions.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Upload image files as a base
+2. Add / edit a text in the upper area of the screen
+3. Add / edit a text in the lower area of the screen
+4. Possibility to download the meme (JPG / PNG / GIF)
+5. Styling of the texts
+   - Font size
+   - Font color (color picker)
+   - Font (Arial, Comic Sans, Pacifico)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## 2. Design
 
-### `npm test`
+The presentation should be **structured** and **appealing** for users. Colors and fonts can be chosen freely. The front end should consist of only one page.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. Implementation
 
-### `npm run build`
+You have a free hand in the choice of technologies. Whether JavaScript, PHP, C#, Java etc. is entirely up to you. Use what you master best.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following is important to us:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Why did you choose this technology / language
+- How confident are you in dealing with the selected language / technology
+- Why did you choose a particular framework
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We want to know what level of knowledge you have.
 
-### `npm run eject`
+### 3.1 Use of 3rd party libraries
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The implementation can be done with the help of **3rd party libraries**. All libraries used (which are not part or dependency of a frontend or backend framework) must be **referenced**. Please also explain why you chose exactly these libraries.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3.2 Maintainability
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Well-structured and documented code is important for implementation. Compliance with current **Best Practices** and **Coding Style Guidelines** (depending on the language / technology used) is desired.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Your code should be **readable** and **understandable** - even for third parties. The program flow should also be traceable.
 
-## Learn More
+Keep in mind that you and / or others need to build on this code and expand the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 4. Supply
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When you are finished with the task - or have only completed part of the time, you can provide us with your work result as follows:
 
-### Code Splitting
+1. Provide us with the link to your code repository
+   - If you don't have one yet, you can get one of the leading providers (e.g. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [Bitbucket](https://bitbucket.org/), [AzureDevOps](https://dev.azure.com/), ...) create an account and make your project available there.
+   - Please make sure that the visibility of the repository is set to "Public"
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+2. Add a copy of the attached file [Task Result](Task&#32;Result.md) and fill in all points accordingly.
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+3. If you want to provide a demo of your project, [GitHub Pages](https://pages.github.com/) offers an easy way.
