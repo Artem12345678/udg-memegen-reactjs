@@ -54,7 +54,7 @@
     "lint-staged": "^9.5.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
-    "stylelint": "^10.0.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-scss": "^3.13.0"
   },
